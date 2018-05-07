@@ -2,20 +2,28 @@
 <html>
 <head>
 	<title></title>
-	<style>
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 </head>
 <body>
-	
-	<div>Find: 
-		<select id="find">
-			<option id="findBalance">Balance</option>
-			<option id="findTerm">Term</option>
-			<option id="findRate">Rate</option>
-			<option id="findPayment">Payment</option>
-		</select>
+
+<div class="container-all col-md-9">	
+	<div class="container-find text-center"> 
+		<div class="row">
+			<div class=" col-lg text-center">
+				<h3>
+					Choose what you want to calculate
+				</h3>
+				<select id="find" class="center">
+					<option id="findBalance">Balance</option>
+					<option id="findTerm">Term</option>
+					<option id="findRate">Rate</option>
+					<option id="findPayment">Payment</option>
+				</select>
+			</div>
+		</div>
 	</div>
+
 	<!-- possibly build in payment frequencies -->
 <!-- 	<div>Payments per Year: 
 		<select id="frequency">
@@ -25,19 +33,48 @@
 			<option id="weekly">52</option>
 		</select>
 	</div> -->
-	<div>Original Balance: $ 
-	    <input id="amount" name="amount" placeholder="Ex: 4000">
+
+	<div class="container center text-center">		
+		<div class="row">
+			<div class="col-sm-6 col-centered"> 
+				<h5>
+					Original Balance:
+				</h5> 
+				<input id="amount" name="amount" placeholder="Ex: 4000">
+			</div>
+		</div>
+		<div class="row"> 
+			<div class="col-sm-6 col-centered"> 
+				<h5>
+					Term:
+				</h5> 
+				<input id="term" name="term" placeholder="Ex: 36">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-centered"> 
+				<h5>
+					Rate:
+			</h5>  
+					<input id="interestRate" name="interestRate" placeholder="Ex: 8.00">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-centered"> 
+				<h5>
+					Payment
+				</h5> 
+				<input id="payment" name="payment" placeholder="Ex: 125.35">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-centered button">  
+				<button type="button" class="btn btn-success" onclick="calculate()">Calculate</button>
+			</div>
+		</div>
 	</div>
-	<div>Term:
-		<input id="term" name="term" placeholder="Ex: 36"> months
-	</div>
-	<div>Interest Rate: 
-		<input id="interestRate" name="interestRate" placeholder="Ex: 8.00">%
-	</div>
-	<div>Payment: $
-		<input id="payment" name="payment">
-	</div>
-	<button onclick="calculate()">Calculate</button>
+</div>
+
 
 <script>
 
