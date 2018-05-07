@@ -1,0 +1,50 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding: 20px;
+	font: normal 16px Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+/*linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3))*/
+/*linear-gradient(rgba(50,40,75,0.7),rgba(30,80,40,0.2)),*/
+.container-all{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: ;
+    right: 0;
+    margin: auto;
+    border: 3px groove #ccc;
+    border-radius: 10px;
+    background-color: rgba(88,88,88,.4)
+
+}
+
+.container-find{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.container{
+    padding: 10px;*/
+}
+
+.center{
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+    align-content: center;
+}
+
+.col-centered{
+    margin: 0 auto;
+    float: none;
+
+}
+
+.button{
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
