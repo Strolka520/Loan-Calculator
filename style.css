@@ -2,21 +2,26 @@ body{
 	height: 100%;
 	width: 100%;
 	margin:0;
-	padding: 20px;
+	/*padding-top: 20px;*/
 	font: normal 16px Arial, Helvetica, sans-serif;
     text-align:center;
 }
 /*linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3))*/
 /*linear-gradient(rgba(50,40,75,0.7),rgba(30,80,40,0.2)),*/
+
+#particles-js {
+    background: rgba(255,255,0,.08);
+}
+
 .container-all{
     position: absolute;
     top:0;
     bottom: 0;
-    left: ;
+    left: 0;
     right: 0;
+    width: 100%;
     margin: auto;
-    border: 3px groove #ccc;
-    border-radius: 10px;
+    border-bottom: 3px groove #ccc; 
     background-color: rgba(88,88,88,.4)
 
 }
@@ -27,7 +32,7 @@ body{
 }
 
 .container{
-    padding: 10px;*/
+    padding: 10px;
 }
 
 .center{

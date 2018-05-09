@@ -1,0 +1,91 @@
+{
+	"particles":{
+		"number":{
+			"value":150,
+			"density":{
+				"enable": true,
+				"value_area":1500
+			}
+		},
+		"color":{
+			"value":"#7df76a"
+		},
+		"shape":{
+			"type":"image",
+			"stroke":{
+				"width":1,
+				"color": "#32ff00"
+			},
+			"image":{
+				"src": "http://www.iconarchive.com/download/i18355/iconshock/credit-card/dollar.ico",
+				"width": 500,
+				"height": 500
+			}
+		},
+		"opacity":{
+			"value":1,
+			"random":true,
+			"anim":{
+				"enable":true,
+				"speed":0.1
+			}
+		},
+		"size":{
+			"value": 40,
+			"random":true,
+			"anim":{
+				"enable": true,
+				"speed": 3
+			}
+		},
+		"line_linked":{
+			"enable": false,
+			"distance": 120,
+			"color": "#00ffff",
+			"width": 2
+		},
+		"move":{
+			"enable":true,
+			"speed":1,
+			"direction":"bottom",
+			"straight":false,
+			"bounce": false,
+			"attract": {
+				"enable": true,
+				"rotateX": 600,
+				"rotateY": 1200
+			}
+
+		}
+	},
+	"interactivity":{
+		"events":{
+			"onhover":{
+				"enable":true,
+				"mode":"bubble"
+			},
+			"onclick":{
+				"enable":true,
+				"mode":"push"
+
+			}
+		},
+
+		"modes":{
+			"grab":{
+				"distance": 800,
+				"line_linked": {
+					"opacity": 1
+				}
+			},
+			"repulse":{
+				"distance":50,
+				"duration":0.4
+			},
+			"bubble":{
+				"distance":100,
+				"size":50
+			}
+		}
+	}
+}
